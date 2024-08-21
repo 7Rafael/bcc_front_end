@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Novo Item</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criar Novo Item</h1>
+        <form class="item-form">
+            <label for="item-name">Nome do Item:</label>
+            <input type="text" id="item-name" name="item-name" required>
+
+            <label for="item-description">Descrição:</label>
+            <textarea id="item-description" name="item-description" rows="4" required></textarea>
+
+            <label for="item-price">Preço:</label>
+            <input type="number" id="item-price" name="item-price" step="0.01" required>
+
+            <label for="item-image">Imagem do Item:</label>
+            <input type="file" id="item-image" name="item-image" accept="image/*">
+
+            <button type="submit">Adicionar Item</button>
+        </form>
+    </div>
+</body>
+</html>
